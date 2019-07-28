@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SQL Parser</title>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" href="sql_style.css" type="text/css">
+</head>
+
+<body>
+
+<p>Enter sql here:</p>
+<form>
+	<textarea rows='15' cols='100' id="sql_code"></textarea>
+    <input type="submit" id="parse_sql_code" />
+</form>
+
+<div id="table_area">
+	<p>Table Name: people</p>
+	<table id="people_table">
+    	<tbody>
+            <tr>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>ability</th>
+                <th>source</th>
+                <th>lightsource</th>
+            </tr>
+            <tr>
+                <td>Joe</td>
+                <td>Moceri</td>
+                <td>Flight</td>
+                <td>1</td>
+                <td>Thermal</td>
+            </tr>
+            <tr>
+                <td>Tony</td>
+                <td>Stark</td>
+                <td>Ironman</td>
+                <td>2</td>
+                <td>Bright</td>
+            </tr>
+            <tr>
+                <td>Clark</td>
+                <td>Kent</td>
+                <td>Superstrength</td>
+                <td>3</td>
+                <td>Intense</td>
+            </tr>
+            <tr>
+                <td>Bruce</td>
+                <td>Wayne</td>
+                <td>Superintellect</td>
+                <td>4</td>
+                <td>Technological</td>
+            </tr>
+            <tr>
+                <td>Solid</td>
+                <td>Snake</td>
+                <td>Espionage</td>
+                <td>5</td>
+                <td>Natural</td>
+            </tr>
+        </tbody>
+	</table>
+</div>
+
+<div id="table_errors">
+	<ul>
+    </ul>
+</div>
+
+<div id="table_information">
+	<ul>
+    	<li>firstname is of type varchar and can hold 45 characters.</li>
+    	<li>lastname is of type varchar and can hold 55 characters.</li>
+    	<li>ability is of type varchar and can hold 30 characters..</li>
+    	<li>source is of type int and can hold integers.</li>
+    </ul>
+</div>
+
+
+<div id="output_area">
+	<p>Output: </p>
+	<table id="output_table">
+
+    </table>
+</div>
+
+</body>
+</html>

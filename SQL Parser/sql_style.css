@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+table, tr, td{
+	border:1px solid black;
+	padding:5px;
+}
+
+th{
+
+	background-color: #CCC;
+	border:1px solid black;
+	padding:5px;
+
+}
+
+#table_area, #table_information, #table_errors, #output_area{
+	
+	display:inline-block;
+	vertical-align: top;
+	
+}
+
+#table_information, #output_table{
+	display:none;
+}
+
+th{
+	text-align:left;
+}
