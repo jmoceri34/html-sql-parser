@@ -6,4 +6,4 @@
 
 <a name="overview"></a>
 ## Overview
-This has basic support for SQL including select and where, written in JavaScript to parse HTML tables
+This has basic support for SQL including select and where, written in JavaScript to parse HTML tables. See the live demo [here](jmoceri34.github.io/html-sql-parser/). 
